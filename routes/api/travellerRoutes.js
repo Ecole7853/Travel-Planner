@@ -5,19 +5,19 @@ const express = require("express");
 const router = express.Router();
 
 //building our route /travellers
-router.get("/travellers", (request, response) => {
+router.get("/", (request, response) => {
   response.send("test");
 });
 
-router.post("/travellers", (request, response) => {
+router.post("/", (request, response) => {
   response.send("test");
 });
 
-router.get("/travellers/:id", (request, response) => {
+router.get("/:id", (request, response) => {
   response.send("test");
 });
 
-router.delete("/travellers/:id", (request, response) => {
+router.delete("/:id", (request, response) => {
   response.send("test");
 });
 
