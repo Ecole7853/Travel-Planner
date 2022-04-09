@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ecole7853/Travel-Planner/issues"
   },
-  "homepage": "https://github.com/Ecole7853/Travel-Planner#readme"
+  "homepage": "https://github.com/Ecole7853/Travel-Planner#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
