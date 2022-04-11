@@ -11,8 +11,13 @@ const sequelize = require("./config/connection");
 //initialising app for express
 const app = express();
 
+//parsing application/json
+app.use(express.json());
 //declaring a port we'll use for express
 const port = 3000;
+
+//for parsing application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
 
 //setting our route on app with a request and response arguments
 //telling app, when you get a .get request, first it needs to process the routes, if it doesn't === /route, will repond 404, if it does, 200, and pass into function
